@@ -22,7 +22,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install && uname -a",
+	"postCreateCommand": "npm install && pip install -U pip && pip install eth-ape && ape plugins install . && curl -L https://foundry.paradigm.xyz | bash"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
